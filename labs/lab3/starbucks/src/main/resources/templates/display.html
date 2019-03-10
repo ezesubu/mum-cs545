@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<head>
+    <title>Display</title>
+</head>
+<body>
+Starbuck's ${roast} Roast Coffees:
+
+<table>
+<c:forEach items="${advices}" var="advice">
+    <c:choose>
+        <c:when (advice.index%2 = 0)>
+            <tr style="background-color:cyan">
+        </c:when>
+
+        <c:otherwise>
+             <tr style=\"background-color:yellow\">"
+        </c:otherwise>
+    </c:choose>
+</c:forEach>
+</table>
+</body>
+</html>

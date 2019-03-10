@@ -1,0 +1,13 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>$Title$</title>
+    </head>
+    <body>
+        <p th:text="'The result for sum:  ' + ${sum} + '!'" />
+        <p th:text="'The result for multiplication:  ' + ${product} + '!'" />
+        <form action='calc' method='get'>
+            <input type = 'submit' value = 'Again'/>
+        </form>
+    </body>
+</html>

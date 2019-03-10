@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>$Title$</title>
+</head>
+<body>
+    <form action='calc' method='post' th:object="${calcDTO}">
+        <input type = 'text' size = '2' name = 'add1' required/>+
+        <input type = 'text' size = '2' name = 'add2' required/><br/>
+        <input type = 'text' size = '2' name = 'mult1' required/>*
+        <input type = 'text' size = '2' name = 'mult2' required/><br><br>
+        <input type = 'submit' value = 'Calculate'/>
+    </form>
+</body>
+</html>
